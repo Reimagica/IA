@@ -1,0 +1,289 @@
+﻿.picture_food {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 120px;
+    top: 180px;
+}
+.left_button {
+    position: absolute;
+    left: 70px;
+    top: 315px;
+    width: 40px; 
+    height: 40px; 
+    background-size: cover; 
+    border: none;
+    cursor: pointer; 
+}
+.right_button {
+    position: absolute;
+    left: 518px;
+    top: 315px;
+    width: 40px; 
+    height: 40px; 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer; 
+}
+.food_name {
+    left: 600px;
+    top: 180px;
+    font-size: 40px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+}
+.heart_symbol {
+    position: absolute;
+    left: 900px;
+    top: 200px;
+}
+.add_heart_list {
+    left: 950px;
+    top: 206px;
+    font-size: 15px;
+    position: absolute;
+    color: #F0710D;
+}
+.short_intro {
+    left: 600px;
+    top: 250px;
+    font-size: 15px;
+    position: absolute;
+    color:black;
+    width:480px;
+}
+.star_symbol {
+    position: absolute;
+    left: 600px;
+    top: 310px;
+}
+.window {
+    left: 600px;
+    top: 370px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+}
+.window_content {
+    left: 675px;
+    top: 370px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+}
+.ingredients {
+    left: 600px;
+    top: 410px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+}
+.ingredients_content {
+    left: 675px;
+    top: 410px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    width: 480px;
+}
+.price {
+    left: 600px;
+    top: 490px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+}
+.price_content {
+    left: 675px;
+    top: 490px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+}
+.taste {
+    left: 600px;
+    top: 530px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+}
+.taste_content {
+    left: 675px;
+    top: 530px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+}
+.cooking {
+    left: 600px;
+    top: 570px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+}
+.cooking_content {
+    left: 725px;
+    top: 570px;
+    font-size: 25px;
+    position: absolute;
+    color: black;
+}
+.bulb {
+    left: 600px;
+    top: 620px;
+    position: absolute;
+}
+.tip {
+    left: 640px;
+    top: 625px;
+    position: absolute;
+    font-size: 20px;
+}
+.tip_content {
+    left: 630px;
+    top: 660px;
+    position: absolute;
+    font-size: 15px;
+}
+.chat_symbol {
+    left: 120px;
+    top: 520px;
+    position: absolute;
+}
+.chat {
+    left: 180px;
+    top: 530px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+}
+.chat1{
+    left: 120px;
+    top: 600px;
+    position: absolute;
+}
+.chat2 {
+    left: 120px;
+    top: 680px;
+    position: absolute;
+}
+.chat3 {
+    left: 120px;
+    top: 780px;
+    position: absolute;
+}
+.microphone {
+    left: 600px;
+    top: 716px;
+    position: absolute;
+    width:45px;
+}
+.say {
+    left: 680px;
+    top: 716px;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+}
+.local_symbol {
+    left: 1200px;
+    top: 150px;
+    position: absolute;
+}
+.local_txt{
+    left: 1270px;
+    top: 160px;
+    position: absolute;
+    font-size: 20px;
+    color:black;
+}
+.map {
+    left: 1200px;
+    top: 220px;
+    position: absolute;
+    width:200px;
+    height:300px;
+}
+.recommend_symbol {
+    left: 1200px;
+    top: 600px;
+    position: absolute;
+}
+.recommend_txt {
+    left: 1270px;
+    top: 610px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+}
+.arrow1 {
+    left: 1240px;
+    top: 670px;
+    position: absolute;
+}
+.recommend1 {
+    left: 1280px;
+    top: 670px;
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.arrow2 {
+    left: 1240px;
+    top: 700px;
+    position: absolute;
+}
+.recommend2 {
+    left: 1280px;
+    top: 700px;
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.arrow3 {
+    left: 1240px;
+    top: 730px;
+    position: absolute;
+}
+.recommend3 {
+    left: 1280px;
+    top: 730px;
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.arrow4 {
+    left: 1240px;
+    top: 760px;
+    position: absolute;
+}
+.recommend4 {
+    left: 1280px;
+    top: 760px;
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.arrow5 {
+    left: 1240px;
+    top: 790px;
+    position: absolute;
+}
+.recommend5 {
+    left: 1280px;
+    top: 790px;
+    position: absolute;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}

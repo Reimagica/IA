@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>板栗烧鸡</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="food-review-form.css">
+    <script src="food.js"></script>
+</head>
+<body>
+    <header class="header w">
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="食遇燕园">食遇燕园 <img src="logo.png" alt="" height="70px"></a>
+            </h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">食堂</a></li>
+                <li><a href="">通知</a></li>
+                <li><a href="">讨论</a></li>
+                <li><a href="">个人</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="搜一搜">
+            <button>搜索</button>
+        </div>
+    </header>
+    <div class="pictures_food">
+        <img class="left_button" src="left.png" alt="Previous" onclick="moveSlide(-1)">
+        <img class="picture_food" src="none1.jpg" alt="Food Image">
+        <img class="right_button" src="right.png" alt="Next" onclick="moveSlide(1)">
+    </div>
+    <div class="intro">
+        <p class="food_name">板栗烧鸡</p>
+        <img class="heart_symbol" src="heart.png" alt="">
+        <p class="add_heart_list">添加至心愿单</p>
+        <p class="short_intro">暂无一句话简介，来添加一个吧~ </p>
+        <img class="star_symbol" src="star.png" alt="">
+        <p class="window">窗口：</p>
+        <p class="window_content">家园二楼江南风味</p>
+        <p class="ingredients">食材：</p>
+        <p class="ingredients_content">板栗，鸡肉</p>
+        <p class="price">价格：</p>
+        <p class="price_content">13</p>
+        <p class="taste">口味：</p>
+        <p class="taste_content">暂无</p>
+        <p class="cooking">烹饪方式：</p>
+        <p class="cooking_content">菜品-炒菜，荤素搭配，热</p>
+        <img class="bulb" src="bulb.png" alt="">
+        <p class="tip">小贴士</p>
+        <p class="tip_content">暂无</p>
+    </div>
+    <div class="appraise">
+        <img class="chat_symbol" src="chat.png" alt="">
+        <p class="chat">大家怎么说</p>
+        <img class="chat1" src="chat1.png" alt="">
+        <img class="chat2" src="chat2.png" alt="">
+        <img class="chat3" src="chat3.png" alt="">
+
+        <img class="microphone" src="microphone.png" alt="">
+        <p class="say">我有话要说</p>
+
+        <form class="food-review-form" action="" method="post">
+            <input type="text" name="user_review" id="user_review" placeholder="点击评价菜品" required>
+            <button type="submit">发布</button>
+        </form>
+
+    </div>
+    <div class="local">
+        <img class="local_symbol" src="local.png" alt="">
+        <p class="local_txt">在这里</p>
+        <img class="map" src="map_jiayuan.jpg" alt="">
+    </div>
+    <div class="recommend">
+        <img class="recommend_symbol" src="recommend.png" alt="">
+        <p class="recommend_txt">猜你喜欢</p>
+        <img class="arrow1" src="arrow.png" alt="">
+        <a href="DryFriedBabyChicken.html" class="recommend1">干煸仔鸡</a>
+        <img class="arrow2" src="arrow.png" alt="">
+        <a href="EggTart.html" class="recommend2">蛋挞</a>
+        <img class="arrow3" src="arrow.png" alt="">
+        <a href="XiangyangBeefNoodles.html" class="recommend3">襄阳牛肉面</a>
+        <img class="arrow4" src="arrow.png" alt="">
+        <a href="ChickenCutletRiceWithBurstingFlavor.html" class="recommend4">爆浆鸡排饭</a>
+        <img class="arrow5" src="arrow.png" alt="">
+        <a href="DuckGizzardBucketRice.html" class="recommend5">鸭胗木桶饭</a>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+﻿.food-review-form button {
+    width: 80px;
+    height: 50px;
+    background: #F68262;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 1080px;
+    top: 780px;
+}
+.food-review-form input {
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 600px;
+    top: 780px;
+    border: 1px solid gray;
+    text-align: center;
+}
