@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食遇燕园-北大吃货首选、菜品信息查询、点评讨论、建议投诉</title>
+    <!-- 网站说明 -->
+    <!-- 结合美团或者其他美食网站来看吧，先胡写的 -->
+    <meta name="desccription"
+        content="食遇燕园-为用餐者充分展示菜品信息以便大家进行便捷的查找、筛选，并搭建吃货们彼此安利、排雷的平台。同时帮助食堂管理者及时更新信息、了解用户需求和反馈，更好地提供服务。" />
+    <!-- 关键字 -->
+    <!-- 6到8个关键词，没想好先胡写的 -->
+    <meta name="keywords" content="食品选择,食堂,美食,锅包肉,社群" />
+    <link rel="stylesheet" href="favicon.ico">
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <!-- header头部模块 start -->
+    <header class="header w">
+        <!-- logo模块 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="食遇燕园">食遇燕园 <img src="../images/logo.png" alt="" height="70px"></a>
+            </h1>
+        </div>
+        <!-- nav导航栏部分 -->
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">食堂</a></li>
+                <li><a href="notice.html">通知</a></li>
+                <li><a href="">讨论</a></li>
+                <li><a href="personal.html">个人</a></li>
+            </ul>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="锅包肉">
+            <button>搜索</button>
+        </div>
+    </header>
+ 
+
+
+    <div class="main-container">
+        <script src="js/time.js"></script>
+        <script>
+            // 在页面加载完成后初始化日期选择器
+            document.addEventListener('DOMContentLoaded', function () {
+                flatpickr("#datefrom", {
+                    enableTime: false, // 如果只需要日期，而非日期时间，请设置为 false
+                    dateFormat: "y/m/d", // 设置日期格式
+                });
+            });
+        </script>
+
+
+
+<!-- <style>
+    /* 修改日历的整体样式 */
+    .ui-datepicker {
+        font-size: 14px;
+        /* 修改字体大小 */
+    }
+
+    /* 修改日期选择框的样式 */
+    .ui-datepicker-trigger {
+        background-color: #ccc;
+        /* 修改触发器的背景颜色 */
+        border: 1px solid #999;
+        /* 修改触发器的边框样式 */
+        padding: 5px;
+        /* 修改触发器的内边距 */
+    }
+
+    /* 修改日期选择框中日期的样式 */
+    .ui-datepicker-calendar td a {
+        color: red;
+        /* 修改日期的文字颜色 */
+        background-color: #eee;
+        /* 修改日期的背景颜色 */
+        border: 1px solid #ddd;
+        /* 修改日期的边框样式 */
+    }
+
+    /* 修改清除链接的样式 */
+    .clearlink {
+        color: red;
+        /* 修改清除链接的文字颜色 */
+        text-decoration: none;
+        /* 去掉下划线 */
+        cursor: pointer;
+        /* 显示手型光标 */
+    }
+</style> -->
+      
+<!-- 引入 jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>  
+        <!-- 引入 jQuery UI 的样式文件 -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- 引入 jQuery UI 的脚本文件 -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <div class="delect-wrapper">
+            <h2 class="delect-wrapper-title">时间筛选</h2>
+            <div class="delect">  
+                <li class="input-date">
+                    <label>
+                        <input placeholder="From" name="notice_publication_date" class="input-text" type="text" id="datefrom"
+                            onclick="showDatePicker()">
+                    </label>
+                </li>
+
+                <li class="input-date">
+                    <label>
+                        <input placeholder="To" name="notice_publication_date" class="input-text" type="text" id="datefrom"
+                            onclick="showDatePicker()">
+                    </label>
+                </li>
+                <li><a href="#" class="clearlink" onclick="newsDateClear()">清除</a></li>
+            </div>
+
+        </div>
+
+        
+
+        <script src="js/notification-card-color.js"></script>
+        <div class="notifications">
+                <div class="user-container">
+                    <img class="per_img" src="images/personal.webp" alt="">
+                    <p class="user_name">爱吃饭的小张</p>
+                </div>
+            <div class="notification-card-trend">
+                <div class="notification-title-trend">
+                    <a href="https://cyzx.pku.edu.cn/zxdt/155254.htm">动态 | 餐饮中心组织参加学校食堂病媒生物防治 保证学生用餐安全部署会</a>
+                </div>
+                <div class="notification-info">来源：餐饮中心 | 时间：2023-12-11</div>
+                <div class="notification-content">
+                    为防控学校食堂病媒生物污染风险，提升食堂管理人员和从业人员食品安全和病媒生物防治知识水平...
+                <a href="https://cyzx.pku.edu.cn/zxdt/155254.htm" target="_blank" style="color: #841b20;">了解更多</a>
+                </div>
+            </div>
+            <div class="notification-card-info">
+                <div class="notification-title-info">
+                    <a href="https://cyzx.pku.edu.cn/tzgg/152976.htm">通知 | 餐饮中心2023年国庆假期带值班安排</a>
+                </div>
+                <div class="notification-info">来源：餐饮中心 | 时间：2023-9-25</div>
+                <div class="notification-content">
+                    餐饮中心2023年国庆假期带值班安排...
+                    <a href="https://cyzx.pku.edu.cn/zxdt/155254.htm" target="_blank" style="color: #841b20;">了解更多</a>
+                </div>
+            </div>
+            <div class="notification-card-ok">
+                <div class="notification-title-ok">
+                    <a href="">提交成功！</a>
+                </div>
+                <div class="notification-info">来源：食遇燕园平台 | 时间：2023-5-14</div>
+                <div class="notification-content">
+                    您已成功提交餐品信息更新/投诉内容！请等待平台反馈^ ^
+                </div>
+            </div>
+            <div class="notification-card-no">
+                <div class="notification-title-no">
+                    <a href="">出错了> <</a>
+                </div>
+                <div class="notification-info">来源：食遇燕园平台 | 时间：2023-1-14</div>
+                <div class="notification-content">
+                    你所提交的信息已经审核失败，如有疑问，请联系客服人员qwq
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="feedback-wrapper">
+            <h2 class="feedback-wrapper-title">投诉反馈</h2>
+            <div class="feedback">
+                <!-- 反馈条目1 -->
+                <div class="feedback-item">
+                    <div class="feedback-title">食品安全问题-学一</div>
+                    <div class="feedback-info">反馈时间：2023/5/14 | 投诉时间：2023/5/10</div>
+                    <div class="feedback-content">您好！您的投诉已经反馈至相关工作人员。</div>
+                </div>
+                <!-- 反馈条目2 -->
+                <div class="feedback-item">
+                    <div class="feedback-title">食堂环境问题-农园</div>
+                    <div class="feedback-info">反馈时间：2023/12/22 | 投诉时间：2023/12/22</div>
+                    <div class="feedback-content">您好！您的投诉已经反馈至相关工作人员。</div>
+                </div>
+            </div>
+        </div>
+
+        
+                <button id="scrollToTopBtn" onclick="scrollToTop()" title="点击回到页面顶部">↑</button>
+               
+               
+        <script>
+            // Get the button
+            var mybutton = document.getElementById("scrollToTopBtn");
+            window.onscroll = function () {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function scrollToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+
+    <div>
+        <span role="log" aria-live="assertive" style="position: absolute; top: -10000px; left: -10000px;"></span>
+    </div>
+
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</html>

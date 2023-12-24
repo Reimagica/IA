@@ -1,0 +1,219 @@
+/* 用户头像 */
+.per_img{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  display: flex;
+  left: 500px;
+  top: 150px;
+  border-radius: 100%;
+}
+/* 我的口味旁图像标签 小孩儿 */
+.taste{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 70px;
+  top: 310px;
+}
+/* 浏览次数标题旁图像标签-圆眼睛 */
+.times_pic{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 70px;
+  top: 590px;
+}
+/*用户名*/
+.user_name{
+  position: absolute;
+  left:640px;
+  top: 200px;
+  font-size: 20px;
+  color: black;
+}
+/* “我的口味”文字 */
+.flavour_h{
+  left:120px;
+  top: 320px;
+  font-size: 15px;
+  position: absolute;
+  color:black
+}
+/* “浏览次数分布”文字 */
+.times{
+  left:120px;
+  top: 600px;
+  font-size: 15px;
+  position: absolute;
+  color: black;
+}
+/* 浏览次数分布饼图 */
+.pie_img{
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: 100px;
+  top: 650px;
+  object-fit: contain;
+}
+
+/*复选框背景色*/
+.checkboxes.checkbox{
+  background-color: #F0710D;
+}
+
+/* 下拉按钮样式 */
+.dropbtn {
+  background:#f2f2f2; 
+  color:black;
+  font-size: 16px; 
+  border: 1px solid rgb(189, 185, 185);
+  cursor: pointer;
+  width: 1100px;
+  z-index: 10;
+}
+  /* 容器 <div> - 需要定位下拉内容 */
+  .dropdown_records {
+  position: relative;
+  width:1100px;
+  left: 500px;
+  top:480px;
+  display: inline-block;}
+  .dropdown_complaint {
+    position: relative;
+    width:1100px;
+    left: 500px;
+    top:500px;
+    display: inline-block;}
+  .dropdown_settings {
+      position: relative;
+      width:1100px;
+      left: 500px;
+      top: 520px;
+      display: inline-block;}
+
+  /* 下拉内容 (默认隐藏) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+     
+      min-width: 1100px;
+      z-index: 100;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+  /* 下拉菜单的链接 */
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none; 
+  display: block;}
+  /* 鼠标移上去后修改下拉菜单链接颜色 */
+  .dropdown-content a:hover
+  {background-color: #f1f1f1;
+    
+  }
+
+  /* 在鼠标移上去后显示下拉菜单 */
+  .dropdown_records:hover .dropdown-content { 
+  display: block;
+  
+}
+  .dropdown_complaint:hover .dropdown-content { 
+    display: block;}
+    .dropdown_settings:hover .dropdown-content { 
+      display: block;}
+
+  /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+  .dropdown_records .dropbtn {
+  background-color: rgb(251, 251, 251);
+  
+
+}
+
+  .dropdown_complaint .dropbtn
+  {
+    background-color:rgb(251, 251, 251);}
+
+    .dropdown_settings .dropbtn
+  {
+    background-color:rgb(251, 251, 251);}
+
+
+
+/*心愿单*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  top: 310px;
+  width: 1100px;
+  height: 240px;
+  left:500px;
+  background-color:rgb(251, 251, 251);
+  position: absolute;
+  box-shadow: 5px 5px 5px rgb(197, 193, 193);
+}
+
+.content {
+  margin: 0;
+  width: 98%;
+  height: 240px;
+  background-color: rgb(251, 251, 251);
+}
+
+.content h3 {
+  border-bottom: 1px solid rgb(155, 151, 151);
+  height: 35px;
+}
+
+.span1 {
+  border-bottom: 1px solid rgb(235, 163, 30);
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.a1 {
+  float: right;
+  font-size: 14px;
+  font-weight: 500px;
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+}
+
+.box .content ul li {
+  float: left;
+  width: 23%;
+  height: 80%;
+  margin: 10px 1%;
+  display: block;
+  text-decoration: none;
+}
+
+.box .content ul li img {
+  width: 100%;
+}
+
+.box .content ul li h4 {
+  margin-top: 10px;
+  font-weight: 400;
+  color:rgb(0, 0, 0);
+}
+
+.box .content ul li p {
+  margin-top: 10px;
+  color:rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500px;
+}
+
+.box .content ul a p:hover {
+  color: rgb(243, 170, 87);
+}
+
+
+  
